@@ -1,26 +1,37 @@
+@media only screen and (max-width: 595px) {
+    hr {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    main * {
+        font-size: 10px;
+    }
+}
+
 * {
-    font-family: Arial, Helvetica, sans-serif;
     margin: auto;
     transition: 0.5s;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .flex {
     display: flex;
 }
 
-.wrap {
-    flex-wrap: wrap;
-}
-
 body {
     height: 100vh;
     background: linear-gradient(to top left, #00b3fa, #00fd3f);
+    align-items: center;
+    justify-content: center;
 }
 
 main {
     width: 65vw;
     height: 45%;
     padding: 20px;
+    position: fixed;
     flex-wrap: wrap;
     box-shadow: 3px 3px 3px #7575758f;
     background: #ffffff3d;
@@ -50,6 +61,8 @@ input, hr, #btn_login {
 
 input {
     padding: 5px;
+    background: none;
+    border-bottom: 2px solid #00cafd;
 }
 
 #btn_login {
@@ -59,11 +72,10 @@ input {
     border-radius: 7px;
 }
 
-input:focus {
-    border-bottom: 2px solid #00fd3f;
+#btn_login:hover {
+    background: #a0a0a05e;
 }
 
-input {
-    background: none;
-    border-bottom: 2px solid #00cafd;
+input:focus {
+    border-bottom: 2px solid #00fd3f;
 }
