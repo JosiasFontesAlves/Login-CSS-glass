@@ -1,0 +1,1 @@
+window.onload = () => document.querySelector('main').style.transform = 'translateY(0)';
