@@ -1,9 +1,49 @@
+:root {
+    --w7: 7px;
+    --w10: 10px;
+}
+
 * {
     margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
     height: 100vh;
     display: flex;
+    text-align: center;
+    background: linear-gradient(to top left,#ffd900, #008cff);
 }
 
+main {
+    width: 200px;
+    padding: var(--w10);
+    background: #8080804d;
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+}
+
+hr {
+    margin: var(--w10);
+}
+
+form * {
+    margin: var(--w10);
+    border: none;
+    background: none;
+}
+
+input {
+    outline: none;
+    border-bottom: 2px solid;
+}
+
+input, button {
+    padding: var(--w7);
+}
+
+button {
+    width: 75%;
+    background: #9b9b9b7e;
+    border-radius: var(--w7);
+}
